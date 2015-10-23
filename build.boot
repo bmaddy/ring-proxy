@@ -12,7 +12,7 @@
 (bootlaces! +version+)
 
 (task-options!
-  pom  {:project     'tailrecursion/ring-proxy
+  pom  {:project     'bmaddy/ring-proxy
         :version     +version+
         :description "HTTP proxy ring middleware for Clojure web applications."
         :scm         {:url "https://github.com/tailrecursion/ring-proxy"}
