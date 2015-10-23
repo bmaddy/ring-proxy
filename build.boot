@@ -9,6 +9,7 @@
 (require '[adzerk.bootlaces :refer :all])
 
 (def +version+ "3.0.0-SNAPSHOT")
+(bootlaces! +version+)
 
 (task-options!
   pom  {:project     'tailrecursion/ring-proxy
