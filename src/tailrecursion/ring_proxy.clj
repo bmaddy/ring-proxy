@@ -3,9 +3,9 @@
     [java.net URI] )
   (:require
     [clj-http.client         :refer [request]]
+    [clj-http.cookies        :refer [wrap-cookies]]
     [clojure.string          :refer [join split]]
-    [ring.adapter.jetty      :refer [run-jetty]]
-    [ring.middleware.cookies :refer [wrap-cookies]] ))
+    [ring.adapter.jetty      :refer [run-jetty]]))
 
 (defn prepare-cookies
   "Removes the :domain and :secure keys and converts the :expires key (a Date)
